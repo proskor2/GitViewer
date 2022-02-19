@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ViewMyGitHub</string>
+    <string name="test_token">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</string>
+    <string name="personal_access_token">Personal access token</string>
+    <string name="sign_in">Sign In</string>
+    <string name="watchers">watchers</string>
+    <string name="license">License</string>
+    <string name="stars">stars</string>
+    <string name="forks">forks</string>
+</resources>
