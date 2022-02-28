@@ -1,4 +1,4 @@
-package dev.proskor.myapplication.ui.main
+package dev.proskor.myapplication.ui.details
 
 import androidx.lifecycle.ViewModel
 

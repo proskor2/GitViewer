@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/authFragment">
 
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="dev.proskor.myapplication.ui.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" />
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="dev.proskor.myapplication.ui.authorization.AuthFragment"
+        android:label="AuthFragment" />
+    <fragment
+        android:id="@+id/repDetailFragment"
+        android:name="dev.proskor.myapplication.ui.details.RepDetailFragment"
+        android:label="RepDetailFragment" />
 </navigation>

@@ -1,4 +1,4 @@
-package dev.proskor.myapplication.ui.main
+package dev.proskor.myapplication.ui.authorization
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import dev.proskor.myapplication.R
 
 class AuthFragment : Fragment() {
@@ -20,13 +21,17 @@ class AuthFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.auth_fragment, container, false)
+        val view = inflater.inflate(R.layout.auth_fragment, container, false)
+        view.findViewById<Button>(R.id.button_authorization).setOnClickListener(){
+
+        }
+        return view
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(AuthViewModel::class.java)
-        // TODO: Use the ViewModel
+
     }
 
 }
